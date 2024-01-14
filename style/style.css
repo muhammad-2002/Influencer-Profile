@@ -289,8 +289,10 @@ body {
     gap: 30px;
   }
   .banner-content-2 {
-    background-size: 280px;
-    border: 2px solid rebeccapurple;
+    background-size: 270px;
+  }
+  .banner-content-2 img {
+    width: 70%;
   }
   .banner-content-1 {
     width: 100%;
@@ -336,8 +338,7 @@ body {
     border-radius: 6px;
   }
   .popular-collection-container {
-    width: 80%;
-    margin: 0px auto;
+    margin-left: 35px;
   }
 }
 
