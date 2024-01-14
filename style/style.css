@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+
+/* Shared style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --paragraph: #3a3a3a;
+  --heading: #3a3a3a;
+}
+
+.container {
+  max-width: 1110px;
+  width: 78%;
+  margin: 0 auto;
+}
+.small-heading {
+  color: var(--heading);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.paragraph-font {
+  color: var(--heading);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 13px 30px;
+  border-radius: 32px;
+  background: #e02c6d;
+  color: #fff;
+}
+.gap-bottom > * {
+  margin-bottom: 20px;
+}
+/* Shared style */
+
+/* header section start hear */
+.header-section {
+  margin: 100px auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin-right: 20px;
+
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--paragraph);
+}
+.banner {
+  margin-top: 100px;
+}
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
+}
+.banner-content-1 {
+  width: 50%;
+}
+.banner-content-1 h1 {
+  color: var(--heading);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px; /* 134.615% */
+}
+.banner-content-2 {
+  background-image: url("../images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 380px;
+
+  padding: 20px;
+}
+.banner-content-2 img {
+  width: 80%;
+  position: relative;
+
+  left: 30px;
+}
+/* header section End hear */
