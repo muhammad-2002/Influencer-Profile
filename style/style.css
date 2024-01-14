@@ -226,6 +226,20 @@ body {
 .featurs-product {
   margin: 50px auto;
 }
+
+.footer {
+  background: #0a0826;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+}
+.footer-content i {
+  margin: 20px;
+  background-color: #787885;
+  padding: 6px;
+  border-radius: 50%;
+}
+
 /* responsive for mobile */
 
 /* for header */
