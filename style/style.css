@@ -51,25 +51,31 @@ body {
 /* Shared style */
 
 /* header section start hear */
+.list {
+  display: none;
+}
 .header-section {
   margin: 100px auto;
 }
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav > ul {
+.navbar-assain {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
 }
-nav ul li {
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.navbar ul li {
   margin-right: 20px;
 
   list-style: none;
 }
-nav ul li a {
+.navbar a {
   text-decoration: none;
   color: var(--paragraph);
 }
@@ -108,3 +114,70 @@ nav ul li a {
   left: 30px;
 }
 /* header section End hear */
+
+/* responsive for mobile */
+
+/* for header */
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+  .header-section {
+    margin-top: 20px;
+    position: relative;
+  }
+  nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .list {
+    display: block;
+  }
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .navbar ul li {
+    background-color: #e02c6d;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+  }
+  .navbar {
+    margin-left: 10px;
+  }
+  /* banner */
+  .banner-container {
+    flex-direction: column-reverse;
+    margin-top: -80px;
+    gap: 30px;
+  }
+  .banner-content-2 {
+    background-size: 300px;
+  }
+  .banner-content-1 {
+    width: 100%;
+  }
+  .banner-content-1 h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  button {
+    position: relative;
+    left: 100px;
+  }
+}
