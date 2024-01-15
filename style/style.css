@@ -323,9 +323,10 @@ body {
     text-align: center;
   }
 
-  button {
-    position: relative;
-    left: 90px;
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .company-logo {
     margin-top: -100px;
