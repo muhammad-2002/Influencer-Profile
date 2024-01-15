@@ -130,12 +130,13 @@ body {
 .populer-colection {
   margin-top: 50px;
 }
+
 .popular-collection-container {
   display: grid;
+  justify-content: center;
+
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-
-  margin: 0 0px 0 40px;
 }
 .popular-collection-container .card {
   margin-bottom: 40px;
@@ -180,6 +181,7 @@ body {
   letter-spacing: 0.252px;
 }
 .card {
+  margin: 0 auto;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
@@ -289,10 +291,26 @@ body {
     gap: 30px;
   }
   .banner-content-2 {
-    background-size: 270px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 300px;
+
+    background-size: 280px;
+    border: 2px solid rebeccapurple;
+
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    position: relative;
   }
   .banner-content-2 img {
-    width: 70%;
+    width: 60%;
+    position: absolute;
+
+    left: 60px;
+    top: 40px;
+
+    bottom: auto;
   }
   .banner-content-1 {
     width: 100%;
@@ -304,6 +322,7 @@ body {
   p {
     text-align: center;
   }
+
   button {
     position: relative;
     left: 90px;
@@ -311,8 +330,14 @@ body {
   .company-logo {
     margin-top: -100px;
   }
+  .popular-collection {
+    width: 100%;
+    margin: 0 auto;
+  }
   .popular-collection-container {
     grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
   }
   .featurs-product {
     flex-direction: column;
@@ -336,9 +361,6 @@ body {
   }
   .product-content .btn {
     border-radius: 6px;
-  }
-  .popular-collection-container {
-    margin-left: 35px;
   }
 }
 
